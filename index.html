@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="">
+    <nav>
+      <img class="logo" src="assets/images/logo.svg" alt="" />
+      <ol class="nav-list">
+        <li><a class="current" href="#">Home</a></li>
+        <li><a href="#">Learn</a></li>
+        <li><a href="#">About</a></li>
+      </ol>
+    </nav>
+    <section class="landing">
+      <div class="text">
+       
+        <h1>Good afternoon,</h1>
+        <h2>Welcome to <span>One Code's</span> website.</2>
+          <br />
+          <p>Don't know where to find the resources you need for your coding project? This is just the place!</p>
+      </div>
+      <img src="assets/images/gummy-macbook.svg" alt="" />
+    </section>
+  </header>
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #1D2026
+    }
+
+    header {
+      height: 100vh;
+      width: 100vw;
+      overflow-x: hidden
+    }
+
+    .nav-list {
+      float: right;
+      padding: 13px;
+    }
+
+    .nav-list li {
+      list-style-type: none;
+      display: inline;
+    }
+
+    nav .nav-list a {
+      text-decoration: none;
+      padding: 9px 10px;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    .nav-list .current {
+      background: hsl(288, 95%, 79%);
+      color: #000;
+    }
+
+    nav .logo {
+      height: 75px;
+      width: 75px;
+      float: left;
+      margin-top: -2%
+    }
+
+    /*Landing text*/
+    .landing {
+      color: #fff;
+      position: relative;
+      top: 20vh;
+      right: 10px;
+      display: grid;
+      place-items: center padding: 1rem;
+      grid-gap: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    
+    .text {
+      z-index: 1;
+      width: 100%
+    }
+    
+    .text h2,
+    .text p {
+      padding-top: 5%;
+      width: 100%;
+      margin: auto;
+      
+    }
+    
+    .feature-icon {
+      z-index: -1;
+      height: 10px;
+      width: 300px;
+      position: absolute;
+    }
+
+    .landing img {
+      height: 60vh;
+  
+      overflow: hidden;
+      margin: auto
+    }
+    
+    @media only screen and (min-width: 700px) {
+      .landing img {
+        height: 85vh;
+        position: relative;
+        top: -18%;
+        right: -20%;
+      }
+    }
+  </style>
+  <script></script>
+</body>
+
+</html>
